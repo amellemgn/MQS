@@ -1,0 +1,107 @@
+body {
+  background-color: black;
+  color: #20C20E;
+  font-family: 'VT323', monospace;
+  font-size: 15;
+  width: 100%;
+  height: 50%
+  margin: auto;
+}
+
+center {
+  /* this represents textbox, first link and second link */
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+  border: 3px solid green;
+}
+
+.textBox {
+  /* this represents the character names, the adaptable text, and the green rounded-corner rectangle */
+  /* border: 1px solid #20C20E; */
+  background: url("assets/images/Textbox3.png");
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 60%;
+  margin-left:50%;
+  /* WHY DOESN'T MARGIN-AUTO WORK HERE */
+
+}
+
+.profilePicture1 img {
+  border-radius: 10%;
+  box-shadow: 0px
+    /*horiz offset */
+    0px
+    /* vert offset */
+    10px
+    /*blur*/
+    6px
+    /*spread */
+    rgba(32, 194, 14, 0.3);
+  float: left;
+}
+
+.profilePicture2 img {
+  border-radius: 10%;
+  box-shadow: 0px
+    /*horiz offset */
+    0px
+    /* vert offset */
+    10px
+    /*blur*/
+    6px
+    /*spread */
+    rgba(32, 194, 14, 0.3);
+  float: right;
+}
+
+.button {
+  font-size: 50;
+  color:#20C20E;
+  padding: 2px 6px 2px 6px;
+}
+
+#userPara1 {
+  text-align: left;
+}
+
+#userPara2 {
+  text-align: left;
+}
+
+#pictureuser1{
+  text-align: left;
+}
+
+#pictureuser2{
+  text-align: right;
+}
+#blueimage {
+  display: none;
+  position: absolute;
+}
+
+.menu {
+  margin: auto;
+  background-image: url("assets/images/menu1.png");
+  background-repeat: no-repeat;
+  height: 95%;
+}
+
+#menubutton {
+  padding: 50%;
+  padding-top: 50%;
+  color:#ffffff;
+}
+
+#typed {
+  margin-right: 30%;
+}
+
+#linkOne:hover{
+  color: red;
+}
+#linkTwo:hover{
+  color: red;
+}
