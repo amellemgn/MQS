@@ -2,9 +2,15 @@
 window.onload = function() {
   var blueImage = document.getElementById("blueimage");
   var c;
-  var firstLinkOption = "this is firstLink this is firstLink ";
-  var secondLinkOption = "this is secondLink this is secondLink ";
+  var firstLinkOption = "Pending connection...Pending connection...Connection established.";
+  var firstLinkOptionTwo = "Hey, Naked Bear. ";
+  var firstLinkArray = [firstLinkOption, firstLinkOptionTwo];
+  var secondLinkOption = "Come on, who do you think could get this frequency? I know all about you.";
+  var secondLinkOptionTwo = "> e#$Analyzing sender data@#E… FQN scan 10% complete.$%#$# > r##Analyzing sender datar3#@…. FQN scan 18% complete.o§";
+  var secondLinkOptionThree = "Reveal yourself! > Analyzing sender data….FQN scan 32% complete.";
+  var secondLinkOptionFour = "Ah, you know. That’s no fun. The thing is, I know all about you Naked Bear. You’ve got quite the reputation. Where to start….Naked Bear, killing machine extraordinaire. Million dollar merc. Give him a week and he'll set the whole country on fire. SHARKTOOTH defect. Not a Russian, not an American. Works for no man but himself. Heh. You're a wanted man, Naked Bear.> Analyzing sender data… FQN scan 68% complete….";
   var thirdLinkOption = "this is thirdLink this is thirdLink";
+  var thirdLinkOption2 = "this is thirdLink this is thirdLinkferreofnreeorgnel";
   var fourthLinkOption = "this is fourthLink this is fourthLink";
   var fifthLinkOption = "this is fifthLink this is fifthLink";
   var sixthLinkOption = "this is sixthLink this is sixthLink";
@@ -18,17 +24,21 @@ window.onload = function() {
     alert.play();
   }
 
-  dialogOptions.push(new DialogueOptions("test", "Second", "Third", firstLinkOption, "???????", "NAKED BEAR"));
-  dialogOptions.push(new DialogueOptions("test2", "Second2", "Third2", secondLinkOption, "?????????", "NAKED BEAR"));
-  dialogOptions.push(new DialogueOptions("test3", "Second3", "Third3", thirdLinkOption, "??????", "NAKED BEAR"));
-  dialogOptions.push(new DialogueOptions("test4", "Second4", "Third4", fourthLinkOption, "NAKED BEAR", "BIG DADDY"));
-  dialogOptions.push(new DialogueOptions("test5", "Second5", "Third5", fifthLinkOption, "BIG DADDY", "NAKED BEAR"));
-  dialogOptions.push(new DialogueOptions("test6", "Second6", "Third6", sixthLinkOption, "BIG DADDY", "NAKED BEAR"));
+  dialogOptions.push(new DialogueOptions("Who is this?", "How Did u get this frequency?", firstLinkOption, firstLinkOptionTwo, "BIG DADDY", "???????"));
+  dialogOptions.push(new DialogueOptions("......", "Who are you?", secondLinkOption, secondLinkOptionTwo, "?????????", "NAKED BEAR"));
+  dialogOptions.push(new DialogueOptions("YEs", "No ", thirdLinkOption, thirdLinkOption2, "??????", "NAKED BEAR"));
+  dialogOptions.push(new DialogueOptions("Second4", "Third4", fourthLinkOption, "NAKED BEAR", "BIG DADDY"));
+  dialogOptions.push(new DialogueOptions("Second5", "Third5", fifthLinkOption, "BIG DADDY", "NAKED BEAR"));
+  dialogOptions.push(new DialogueOptions("Second6", "Third6", sixthLinkOption, "BIG DADDY", "NAKED BEAR"));
 
 
   function choseLink() {
     removeObjects();
-    addObjects();
+    addFirstUserObjects();
+    addTypedObjects();
+    addSecondUserObjects();
+
+
     typeWriter(dialogOptions[clicks]);
     //let typed = new Typed('#typed', dialogOptions[clicks].options);
 
@@ -62,7 +72,7 @@ window.onload = function() {
           }
           if (e.i == e.textBoxText.length && e.textBoxText === secondLinkOption) {
             console.log("change profile pic");
-            document.getElementById("profilePicture").src="assets/images/BigDaddyGif.gif";
+            document.getElementById("profilePicture").src = "assets/images/BigDaddyGif.gif";
           }
           if (e.i == e.textBoxText.length && e.textBoxText === sixthLinkOption) {
             console.log("end game");
@@ -74,7 +84,8 @@ window.onload = function() {
 
       if (e.i == e.textBoxText.length) {
         console.log("test");
-        addLinkObjects();
+        addFirstLinkObjects();
+        addSecondLinkObjects();
       }
     }
   }
@@ -92,35 +103,46 @@ window.onload = function() {
     myobj4.remove();
   }
 
-  function addObjects() {
+
+  function addFirstUserObjects() {
+
     var para = document.createElement("div"); // Create a <div> element
     para.textContent = dialogOptions[clicks].username1;
     para.setAttribute("id", "userPara1"); // Insert text
     document.getElementById("textingBox").appendChild(para); // Append <div> to <div> with id="myDIV"
 
+  }
+
+  function addSecondUserObjects() {
     var para1 = document.createElement("div");
     para1.textContent = dialogOptions[clicks].username2;
     para1.setAttribute("id", "userPara2");
     document.getElementById("textingBox").appendChild(para1);
+  }
 
+  function addTypedObjects() {
     var para2 = document.createElement("div");
-    para2.textContent = dialogOptions[clicks].textBoxText;;
+    //  para2.textContent = dialogOptions[clicks].textBoxText;;
     para2.setAttribute("id", "typed");
     document.getElementById("textingBox").appendChild(para2);
   }
 
-  function addLinkObjects() {
+  function addFirstLinkObjects() {
     var para3 = document.createElement("div");
     para3.textContent = dialogOptions[clicks].firstLinkOption;
     para3.setAttribute("id", "linkOne");
     document.getElementById("links").appendChild(para3);
 
+    document.getElementById("linkOne").addEventListener("click", choseLink);
+
+  }
+
+  function addSecondLinkObjects() {
     var para4 = document.createElement("div");
     para4.textContent = dialogOptions[clicks].secondLinkOption;
     para4.setAttribute("id", "linkTwo");
     document.getElementById("links").appendChild(para4);
 
-    document.getElementById("linkOne").addEventListener("click", choseLink);
     document.getElementById("linkTwo").addEventListener("click", choseLink);
   }
 

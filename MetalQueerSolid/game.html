@@ -11,39 +11,50 @@
  </head>
 
  <body>
-
-   <audio src="assets/sounds/backgroundmusic.mp3" loop="true" autoplay="true"></audio>
-   <audio id="alert" src="assets/sounds/alert.mp3"></audio>
-
-   <div id="profilePicture1" class="profilePicture1">
-     <img id="profilePicture" src="assets/images/AnonymousGif.gif" width="100px" />
-     <br>
-     <div id="pictureuser1"> Big Daddy </div>
-   </div>
-   <center>
-     <img id="blueimage" src="assets/images/bluerectangle.png" width="300px" />
-     <div id="textingBox" class="textBox">
-       <div id="userPara1"> BIG DADDY </div>
-       <br>
-       <div id=userPara2> NAKED BEAR </div>
-       <span id="typed"> bla bla adaptable text bla </span>
+   <div class="mother-wrapper">
+     <audio src="assets/sounds/backgroundmusic.mp3" loop="true" autoplay="true"></audio>
+     <audio id="alert" src="assets/sounds/alert.mp3"></audio>
+     <div class="left-box">
+       <div id="profilePicture1" class="profilePicture1">
+         <img id="profilePicture" src="assets/images/AnonymousGif.gif" width="100px" />
+         <br>
+         <div id="pictureuser1"> Big Daddy </div>
+       </div>
      </div>
-     <div id="links">
-       <div id="linkOne" onmouseout="style.color='#20C20E'"> First Link </div>
-       <div id="linkTwo" onmouseout="style.color='#20C20E'"> Second Link </div>
-     </div>
-   </center>
-   <div class="profilePicture2">
-     <img src="assets/images/NakedBearGif.gif" width="100px" />
-     <br>
-     <div id="pictureuser2"> Naked Bear </div>
+     <div class="central-box">
+       <center>
+         <img id="blueimage" src="assets/images/bluerectangle.png" width="300px" />
+         <div id="textingBox" class="textBox">
+           <div id="userPara1"> BIG DADDY </div>
+           <span id="typed"> Frequency: 132.4 <br> Unknown sender. <br> Accept message? <br> </span>
+           <br>
+           <div id="userPara2"> NAKED BEAR </div>
+           <div id="links">
+             <div id="linkOne" onmouseout="style.color='#20C20E'"> Yes </div>
+             <div id="linkTwo" onmouseout="style.color='#20C20E'"> No </div>
+           </div>
+         </div>
 
-     <br> <br>
-     <a style="text-decoration:none" href="endscreen.html" class="button"> END GAME </a> <br>
-     <a style="text-decoration:none" href="inventory.html" class="button"> INVENTORY </a>
-     <script src="js/DialogueOptions.js"> </script>
-     <script src="js/libraries/typed.min.js"> </script>
-     <script src="js/script.js"> </script>
+         <br>
+         <br>
+
+         <a style="text-decoration:none" href="endscreen.html" class="button"> END GAME </a> <br>
+         <a style="text-decoration:none" href="inventory.html" class="button"> INVENTORY </a>
+       </center>
+     </div>
+     <div class="right-box">
+       <div class="profilePicture2">
+         <img src="assets/images/NakedBearGif.gif" width="100px" />
+         <br>
+         <div id="pictureuser2">Naked Bear </div>
+       </div>
+     </div>
+       <br> <br>
+
+       <script src="js/DialogueOptions.js"> </script>
+       <script src="js/libraries/typed.min.js"> </script>
+       <script src="js/script.js"> </script>
+     </div>
  </body>
 
  </html>
