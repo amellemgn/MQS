@@ -8,24 +8,16 @@ body {
   margin: auto;
 }
 
-center {
-  /* this represents textbox, first link and second link */
-  width: 40%;
-  margin: auto;
-  margin-top: 20px;
-  border: 3px solid green;
-}
-
 .textBox {
   /* this represents the character names, the adaptable text, and the green rounded-corner rectangle */
   /* border: 1px solid #20C20E; */
   background: url("assets/images/Textbox3.png");
   background-repeat: no-repeat;
-  height: 500px;
-  width: 60%;
-  margin-left:50%;
-  /* WHY DOESN'T MARGIN-AUTO WORK HERE */
-
+  height: 100%;
+  width: 100%;
+  /*margin-left: 23%; */
+  margin-left: 35%;
+  margin-top: -5%;
 }
 
 .profilePicture1 img {
@@ -40,6 +32,14 @@ center {
     /*spread */
     rgba(32, 194, 14, 0.3);
   float: left;
+  margin-left: 25%;
+  margin-top: 4%;
+}
+
+#pictureuser1{
+  text-align: left;
+  margin-left: 26.5%;
+  margin-top: 10%;
 }
 
 .profilePicture2 img {
@@ -54,10 +54,17 @@ center {
     /*spread */
     rgba(32, 194, 14, 0.3);
   float: right;
+  margin-top: -20%;
+  margin-right: 21%;
+}
+#pictureuser2{
+  text-align: right;
+  margin-right: 21%;
+  margin-top: -30%;
 }
 
 .button {
-  font-size: 50;
+  font-size: 30;
   color:#20C20E;
   padding: 2px 6px 2px 6px;
 }
@@ -70,13 +77,6 @@ center {
   text-align: left;
 }
 
-#pictureuser1{
-  text-align: left;
-}
-
-#pictureuser2{
-  text-align: right;
-}
 #blueimage {
   display: none;
   position: absolute;
@@ -93,12 +93,16 @@ center {
   padding: 50%;
   padding-top: 50%;
   color:#ffffff;
+  font-size: 60;
 }
 
 #typed {
   margin-right: 30%;
 }
-
+#linkOne{
+}
+#linkTwo{
+}
 #linkOne:hover{
   color: red;
 }
