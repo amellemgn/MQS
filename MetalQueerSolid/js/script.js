@@ -202,9 +202,13 @@ window.onload = function() {
     if (document.getElementById("blueimage").style.display = "inline") {
       document.getElementById("blueimage").style.display = "none";
     }
+    if (document.getElementById("redimage").style.display = "inline") {
+      document.getElementById("redimage").style.display = "none";
+    }
   }
 
   document.getElementById("linkOne").addEventListener("click", choseLink);
   document.getElementById("linkTwo").addEventListener("click", choseLink);
   document.getElementById("blueimage").addEventListener("click", mousePressed);
+  document.getElementById("redimage").addEventListener("click", mousePressed);
 }

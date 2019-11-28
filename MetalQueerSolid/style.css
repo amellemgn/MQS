@@ -132,10 +132,12 @@ body {
 #blueimage {
   display: none;
   position: absolute;
+  top: 30%;
 }
 #redimage {
   display: none;
   position: absolute;
+left: 10%;
 }
 
 .button {
@@ -144,15 +146,31 @@ body {
   padding: 2px 6px 2px 6px;
 }
 .menu {
-  margin: auto;
-  background-image: url("assets/images/menu1.png");
+  height:95%;
   background-repeat: no-repeat;
-  height: 95%;
+  position: relative;
 }
 
+.menu img{
+  position: absolute;
+  height: 100%;
+}
+#menubuttonid{
+  position: absolute;
+  top: 80%;
+  left: 35%;
+}
 #menubutton {
   padding: 50%;
   padding-top: 50%;
   color: #ffffff;
   font-size: 60;
+}
+
+#endscreenbutton {
+  margin: auto;
+  margin-top: 50%;
+  color: #20C20E;
+  font-size: 40;
+  text-decoration: none;
 }
