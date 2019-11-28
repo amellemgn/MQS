@@ -93,7 +93,7 @@ body {
   text-align: left;
   margin-left: 50px;
   position: absolute;
-  top: 17%;
+  top: 27%;
 }
 
 #typed {
@@ -102,13 +102,14 @@ body {
   margin-left: 50px;
   width: 400px;
   text-align: left;
+  white-space: pre-line;
+  /*line-height: 200%; */
 }
-
 
 #linkOne{
   position: absolute;
   left: 35%;
-  top: 66%;
+  top: 82%;
   width: 400px;
 
 }
@@ -116,7 +117,7 @@ body {
 #linkTwo{
   position: absolute;
   left: 35%;
-  top: 71%;
+  top: 87%;
   width: 400px;
 
 }
@@ -129,6 +130,10 @@ body {
 }
 
 #blueimage {
+  display: none;
+  position: absolute;
+}
+#redimage {
   display: none;
   position: absolute;
 }
