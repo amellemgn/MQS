@@ -23,7 +23,7 @@ window.onload = function() {
 
   let clicks = 0;
   var dialogOptions = [];
-  var speed = 130;
+  var speed = 160;
 
   var alert = new Audio("assets/sounds/alert.mp3");
 
@@ -206,6 +206,7 @@ window.onload = function() {
       document.getElementById("redimage").style.display = "none";
     }
   }
+// INVENTORY BAKE IMAGES
 
   document.getElementById("linkOne").addEventListener("click", choseLink);
   document.getElementById("linkTwo").addEventListener("click", choseLink);
